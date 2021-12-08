@@ -13,18 +13,30 @@ function getStocks() {
     })
     .then((data) => {
       console.log(data);
-      stockData(data);
+      stockDate(data);
+      showIndex(data);
     })
     .catch((err) => {
       console.error(err);
     });
 }
 
-function stockData(data) {
+function showIndex(data) {
+  let row = document.querySelector(".index");
+  let index = trimFirstCharacter(data[0].symbol);
+  console.log(index);
+  row.innerHTML = index;
+}
+
+function stockDate(data) {
   let stockDays = data.map((stock) => {
     let stockDay = new Date(stock.timestamp * 1000);
     console.log(stockDay);
   });
-
-  function stockUporDown(data) {}
 }
+
+function trimFirstCharacter(str) {
+  return str.slice(1);
+}
+
+function stockUporDown(data) {}
