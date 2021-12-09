@@ -15,6 +15,8 @@ function getStocks() {
       console.log(data);
       stockDate(data);
       showIndex(data);
+      let upOrDown = stockUporDown(data[0].change);
+      console.log(upOrDown);
     })
     .catch((err) => {
       console.error(err);
@@ -39,4 +41,10 @@ function trimFirstCharacter(str) {
   return str.slice(1);
 }
 
-function stockUporDown(data) {}
+function stockUporDown(change) {
+  if (change > 0) {
+    return "images/Up_green_arrow.png";
+  } else {
+    return "images/Red_arrow_down.png";
+  }
+}
