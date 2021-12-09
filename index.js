@@ -30,10 +30,10 @@ function showIndex(data) {
   row.innerHTML = index;
 }
 
+//used to test if you have the correct dates of objects in array
 function stockDate(data) {
-  let stockDays = data.map((stock) => {
-    let stockDay = new Date(stock.timestamp * 1000);
-    console.log(stockDay);
+  data.forEach((stock) => {
+    console.log(new Date(stock.timestamp * 1000));
   });
 }
 
@@ -41,6 +41,7 @@ function trimFirstCharacter(str) {
   return str.slice(1);
 }
 
+//function should go in img src attribute
 function stockUporDown(change) {
   if (change > 0) {
     return "images/Up_green_arrow.png";
