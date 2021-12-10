@@ -160,3 +160,11 @@ sup {
 .stockIndex {
   height: 15rem;
 }
+
+#main-header {
+  background-color: darkgray;
+  text-align: center;
+  padding: 2rem;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}

@@ -74,7 +74,7 @@ function appendData(data) {
       </div>
     </div>
     <div class="current-price">
-      ${element.price}
+      ${element.price.toFixed(2)}
     </div>
     </li>`;
   });
