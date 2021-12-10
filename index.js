@@ -53,9 +53,9 @@ function trimFirstCharacter(str) {
 //function should go in img src attribute
 function stockUporDown(change) {
   if (change > 0) {
-    return "images/Up_green_arrow.png";
+    return "&#x25B2";
   } else {
-    return "images/Red_arrow_down.png";
+    return "&#x25BC";
   }
 }
 
@@ -67,7 +67,9 @@ function appendData(data) {
     <li class="stockIndex">
     <div class="index">${index}</div>
     <div class="top-flex">
-      <div style="font-size: 5rem;">&#128315</div>
+      <div class="${stockUporDown(element.change).slice(2)}">${stockUporDown(
+      element.change
+    )}</div>
       <div class="top-vertical-flex">
         <p>${element.change.toFixed(2)}</p>
         <p>${element.changesPercentage.toFixed(2)}%</p>

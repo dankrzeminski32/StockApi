@@ -7,6 +7,7 @@ body {
   background: #fff;
   color: #000;
   font-size: 1.4rem;
+  background-color: #fbfbfb;
 }
 /* sets the body height of the browser, so that backgrounds and div heights work correctly. Color and background will almost certainly be altered; they are just placeholders */
 
@@ -113,8 +114,8 @@ sup {
 /* sets superscript and subscript text so that it doesn't throw off leading for elements in which they are included */
 
 .stock-widget {
-  width: 20rem;
-  background-color: rgb(218, 16, 16);
+  width: 13rem;
+  background-color: rgb(170, 20, 20);
   margin: 0 auto;
   padding: 0.2rem;
   overflow: hidden;
@@ -124,32 +125,33 @@ sup {
 .index {
   font-size: 3rem;
   text-align: center;
-  background-color: dimgrey;
-  color: azure;
+  background-color: rgb(94, 93, 93);
+  color: #fbfbfb;
   font-weight: 600;
+  border-radius: 0.5rem;
 }
 
 .top-flex {
   display: flex;
-  justify-content: space-between;
-  padding: 1rem;
+  justify-content: space-around;
+  padding: 0.2rem 0;
 }
 
 .top-vertical-flex {
   display: flex;
   flex-direction: column;
-  font-size: 2rem;
-  justify-content: space-around;
-  row-gap: 1rem;
+  font-size: 1.7rem;
+  justify-content: space-evenly;
 }
 
 .top-vertical-flex p {
   margin: 0;
+  padding: 0;
 }
 
 .current-price {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 
 #main-ticker {
@@ -167,4 +169,14 @@ sup {
   padding: 2rem;
   font-size: 3rem;
   margin-bottom: 4rem;
+}
+
+.x25B2 {
+  color: green;
+  font-size: 6rem;
+}
+
+.x25BC {
+  color: red;
+  font-size: 6rem;
 }
