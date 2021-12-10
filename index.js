@@ -2,6 +2,14 @@
 
 getStocks();
 
+function startTicker() {
+  $("#main-ticker li:first").slideUp(function () {
+    $(this).appendTo($("#main-ticker")).slideDown();
+  });
+}
+
+setInterval(startTicker, 5000);
+
 function getStocks() {
   const key = "***REMOVED***";
   const fetchResponsePromise = fetch(
@@ -52,10 +60,12 @@ function stockUporDown(change) {
 }
 
 function appendData(data) {
-  let container = document.querySelector(".stock-widget");
+  let container = document.querySelector("#main-ticker");
   data.forEach((element) => {
     let index = trimFirstCharacter(element.symbol);
-    container.innerHTML += `<div class="index">${index}</div>
+    container.innerHTML += `
+    <li class="stockIndex">
+    <div class="index">${index}</div>
     <div class="top-flex">
       <div style="font-size: 5rem;">&#128315</div>
       <div class="top-vertical-flex">
@@ -65,6 +75,7 @@ function appendData(data) {
     </div>
     <div class="current-price">
       ${element.price}
-    </div><hr>`;
+    </div>
+    </li>`;
   });
 }
