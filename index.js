@@ -11,9 +11,9 @@ function startTicker() {
 setInterval(startTicker, 5000);
 
 function getStocks() {
-  const key = "***REMOVED***";
+  let key = config.MY_KEY;
   const fetchResponsePromise = fetch(
-    "https://financialmodelingprep.com/api/v3/quote/%5EGSPC,%5EDJI,%5EIXIC?apikey=***REMOVED***"
+    `https://financialmodelingprep.com/api/v3/quote/%5EGSPC,%5EDJI,%5EIXIC?apikey=${key}`
   )
     .then((response) => {
       data = response.json();
