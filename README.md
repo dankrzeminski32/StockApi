@@ -53,7 +53,7 @@ To get a local copy up and running follow these simple example steps.
    ```
 3. Create a ```config.js``` file
 4. Add this code to ```config.js```
-   ```
+   ```js
    var config = {
      MY_KEY: "EnterYourKeyHere123",
    };
