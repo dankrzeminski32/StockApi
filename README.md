@@ -12,9 +12,9 @@
     Clean widget to get real time stock data on any website.
     <br />
     <br />
-    <a href="https://github.com/dankrzeminski32/JSToDoApp/issues">Report Bug</a>
+    <a href="https://github.com/dankrzeminski32/StockApi/issues">Report Bug</a>
     ·
-    <a href="https://github.com/dankrzeminski32/JSToDoApp/issues">Request Feature</a>
+    <a href="https://github.com/dankrzeminski32/StockApi/issues">Request Feature</a>
   </p>
 </div>
 
@@ -103,4 +103,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Daniel Krzeminski - dankrzeminski32@gmail.com
 
-Project Link: [https://github.com/dankrzeminski32/JSToDoApp](https://github.com/dankrzeminski32/JSToDoApp)
+Project Link: [https://github.com/dankrzeminski32/StockApi](https://github.com/dankrzeminski32/StockApi)
