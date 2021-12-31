@@ -53,11 +53,11 @@ To get a local copy up and running follow these simple example steps.
    ```
 3. Create a ```config.js``` file
 4. Add this code to ```config.js```
-  ```
-  var config = {
-    MY_KEY: "EnterYourKeyHere123",
-  };
-  ```
+   ```
+   var config = {
+     MY_KEY: "EnterYourKeyHere123",
+   };
+   ```
 5.) Save your new ```config.js``` file
 
 Nice work, you now have a **copy** of this project on your local machine. 
