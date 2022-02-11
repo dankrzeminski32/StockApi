@@ -46,7 +46,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-1. Make a free account at https://site.financialmodelingprep.com/
+1. Make a premium (paid) account at https://site.financialmodelingprep.com/
 2. Clone the repo
    ```
    git clone https://github.com/dankrzeminski32/StockApi.git
